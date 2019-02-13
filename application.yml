@@ -6,10 +6,11 @@ spring:
 
 ---
 spring:
-     profiles: dev  #开发模式
-       applicatio
-         name: springcloud-config-spring-dev
+  profiles: dev  # 开发模式
+    application:
+      name: springcloud-config-spring-dev
 
+---
 spring:
   profiles:
     active:
