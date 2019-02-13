@@ -19,3 +19,23 @@ eureka:
        defaultZone:  http://eureka7001.com:7001/eureka/       
 
 
+--- 
+spring: 
+  profiles: 
+    active:
+    - test
+
+---  
+server:
+  port: 8202  
+
+spring:
+  profiles: test #测试模式
+  application: 
+       name: springcloud-config-spring-test-client 
+       
+       
+eureka:
+  client: 
+    service-url: 
+       defaultZone:  http://eureka7001.com:7001/eureka/ 
