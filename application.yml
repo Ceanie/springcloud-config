@@ -1,1 +1,22 @@
- 
+---
+spring:
+  profiles:
+    active:
+    -dev
+
+---
+spring:
+     profiles: dev  #开发模式
+       applicatio
+         name: springcloud-config-spring-dev
+
+spring:
+  profiles:
+    active:
+    -test
+
+---
+spring:
+  profiles: test  # 测试模式
+    application:
+      name: springcloud-config-spring-test
