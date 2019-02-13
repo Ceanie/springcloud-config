@@ -1,9 +1,10 @@
 ---  
 spring: 
-   profiles: 
+  profiles: 
     active:
     - dev
 
+---  
 server:
   port: 8201  
 
@@ -20,10 +21,11 @@ eureka:
 
 --- 
 spring: 
-   profiles: 
+  profiles: 
     active:
     - test
- 
+
+---  
 server:
   port: 8202  
 
